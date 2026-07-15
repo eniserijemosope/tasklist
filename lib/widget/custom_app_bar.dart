@@ -19,17 +19,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           letterSpacing: 1.2,
         ),
       ),
-      leading: Padding(
-        padding: const EdgeInsets.only(left: 16.0),
-        child: CircleAvatar(
-            child: IconButton(
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            icon: Icon(Icons.menu_rounded, color: Colors.black),
-          ),
-        ),
-      ),
     );
   }
 
