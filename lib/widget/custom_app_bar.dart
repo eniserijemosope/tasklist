@@ -22,12 +22,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: Padding(
         padding: const EdgeInsets.only(left: 16.0),
         child: CircleAvatar(
-          backgroundColor: Colors.green[50],
-          child: IconButton(
+            child: IconButton(
             onPressed: () {
               Scaffold.of(context).openDrawer();
             },
-            icon: Icon(Icons.menu_rounded, color: Colors.green[800]),
+            icon: Icon(Icons.menu_rounded, color: Colors.black),
           ),
         ),
       ),
