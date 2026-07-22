@@ -16,21 +16,25 @@ class CustomBottomNav extends StatelessWidget {
   Widget build(BuildContext context) {
     return CurvedNavigationBar(
       index: currentIndex,
-      backgroundColor: const Color(0xFFB7D7B0),
-      color: const Color(0xFFB7D7B0),
-      buttonBackgroundColor: const Color(0xFF7FAF7B),
+      backgroundColor: Colors.white,
+      color: const Color(0xFF07264A),
+      buttonBackgroundColor: const Color(0xFF6EC6FF),
+      animationDuration: const Duration(milliseconds: 300),
       items: [
         CurvedNavigationBarItem(
-          child: const Icon(Icons.person_outline, color: Colors.white),
-          label: 'Profile',
+          child: const Icon(Icons.checklist_rounded, color: Colors.white, size: 20),
+          label: 'Routine',
+          labelStyle: const TextStyle(color: Colors.white),
         ),
         CurvedNavigationBarItem(
-          child: const Icon(Icons.water_drop_outlined, color: Colors.white),
+          child: const Icon(Icons.water_drop_outlined, color: Colors.white, size: 20),
           label: 'Water',
+          labelStyle: const TextStyle(color: Colors.white),
         ),
         CurvedNavigationBarItem(
-          child: const Icon(Icons.notifications_none_rounded, color: Colors.white),
-          label: 'Notification',
+          child: const Icon(Icons.person_outline, color: Colors.white, size: 20),
+          label: 'Profile',
+          labelStyle: const TextStyle(color: Colors.white),
         ),
       ],
       onTap: onTap,
